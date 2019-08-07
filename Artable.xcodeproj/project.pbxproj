@@ -17,6 +17,7 @@
 		CE7FBF6822FA45A400F9A226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7FBF6622FA45A400F9A226 /* Main.storyboard */; };
 		CE7FBF6D22FA45A400F9A226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7FBF6B22FA45A400F9A226 /* LaunchScreen.storyboard */; };
 		CE7FBF7322FA461000F9A226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7FBF5122FA453600F9A226 /* Assets.xcassets */; };
+		CE7FBF7522FA546500F9A226 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7FBF7422FA546500F9A226 /* LoginStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		CE7FBF6722FA45A400F9A226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE7FBF6C22FA45A400F9A226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7FBF6E22FA45A400F9A226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7FBF7422FA546500F9A226 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				CE7FBF4A22FA453300F9A226 /* AppDelegate.swift */,
 				CE7FBF4C22FA453300F9A226 /* ViewController.swift */,
+				CE7FBF7422FA546500F9A226 /* LoginStoryboard.storyboard */,
 				CE7FBF4E22FA453300F9A226 /* Main.storyboard */,
 				CE7FBF5322FA453600F9A226 /* LaunchScreen.storyboard */,
 				CE7FBF5622FA453600F9A226 /* Info.plist */,
@@ -183,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7FBF7522FA546500F9A226 /* LoginStoryboard.storyboard in Resources */,
 				CE7FBF5522FA453600F9A226 /* LaunchScreen.storyboard in Resources */,
 				CE7FBF5222FA453600F9A226 /* Assets.xcassets in Resources */,
 				CE7FBF5022FA453300F9A226 /* Main.storyboard in Resources */,
