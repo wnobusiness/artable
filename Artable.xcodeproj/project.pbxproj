@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		25D6AC21D1E67803CA5444B8 /* Pods_Artable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F055E062DD8AAC531E60A30 /* Pods_Artable.framework */; };
 		CE7FBF4B22FA453300F9A226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FBF4A22FA453300F9A226 /* AppDelegate.swift */; };
-		CE7FBF4D22FA453300F9A226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FBF4C22FA453300F9A226 /* ViewController.swift */; };
+		CE7FBF4D22FA453300F9A226 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FBF4C22FA453300F9A226 /* HomeVC.swift */; };
 		CE7FBF5022FA453300F9A226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7FBF4E22FA453300F9A226 /* Main.storyboard */; };
 		CE7FBF5222FA453600F9A226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7FBF5122FA453600F9A226 /* Assets.xcassets */; };
 		CE7FBF5522FA453600F9A226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7FBF5322FA453600F9A226 /* LaunchScreen.storyboard */; };
@@ -26,6 +26,16 @@
 		CE98D04322FB667B00374CD1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D04222FB667B00374CD1 /* Extensions.swift */; };
 		CE98D04522FB911000374CD1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D04422FB911000374CD1 /* Constants.swift */; };
 		CE98D04822FB9B1A00374CD1 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D04722FB9B1A00374CD1 /* RoundedViews.swift */; };
+		CE98D04C22FBD99D00374CD1 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D04A22FBD99D00374CD1 /* ForgotPasswordVC.swift */; };
+		CE98D04D22FBD99D00374CD1 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE98D04B22FBD99D00374CD1 /* ForgotPasswordVC.xib */; };
+		CE98D04F22FC7C0700374CD1 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D04E22FC7C0700374CD1 /* Firebase+Utils.swift */; };
+		CE98D05022FC7CE300374CD1 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D04E22FC7C0700374CD1 /* Firebase+Utils.swift */; };
+		CE98D05222FC808300374CD1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D05122FC808300374CD1 /* Category.swift */; };
+		CE98D05322FC808900374CD1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D05122FC808300374CD1 /* Category.swift */; };
+		CE98D05622FC813400374CD1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D05422FC813300374CD1 /* CategoryCell.swift */; };
+		CE98D05722FC813400374CD1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98D05422FC813300374CD1 /* CategoryCell.swift */; };
+		CE98D05822FC813400374CD1 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE98D05522FC813300374CD1 /* CategoryCell.xib */; };
+		CE98D05922FC813400374CD1 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE98D05522FC813300374CD1 /* CategoryCell.xib */; };
 		F9DAC06C5CD977D579AA7FB6 /* Pods_ArtableAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EF4BDA9F81375A352CBDBF /* Pods_ArtableAdmin.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +48,7 @@
 		88EF4BDA9F81375A352CBDBF /* Pods_ArtableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7FBF4722FA453300F9A226 /* Artable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7FBF4A22FA453300F9A226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE7FBF4C22FA453300F9A226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE7FBF4C22FA453300F9A226 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CE7FBF4F22FA453300F9A226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE7FBF5122FA453600F9A226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7FBF5422FA453600F9A226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +67,12 @@
 		CE98D04222FB667B00374CD1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE98D04422FB911000374CD1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE98D04722FB9B1A00374CD1 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
+		CE98D04A22FBD99D00374CD1 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		CE98D04B22FBD99D00374CD1 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		CE98D04E22FC7C0700374CD1 /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		CE98D05122FC808300374CD1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		CE98D05422FC813300374CD1 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		CE98D05522FC813300374CD1 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +139,7 @@
 		CE7FBF4922FA453300F9A226 /* Artable */ = {
 			isa = PBXGroup;
 			children = (
-				CE7FBF7C22FA7F9500F9A226 /* Model */,
+				CE98D04922FBD98100374CD1 /* XIBs */,
 				CE7FBF7B22FA7F8000F9A226 /* Views */,
 				CE7FBF7A22FA7F7100F9A226 /* Controller */,
 				CE7FBF7D22FA7FA000F9A226 /* Storyboards */,
@@ -149,6 +165,8 @@
 		CE7FBF7222FA45E700F9A226 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CE98D05A22FC814D00374CD1 /* XIBs */,
+				CE7FBF7C22FA7F9500F9A226 /* Model */,
 				CE98D04622FB9B0600374CD1 /* View */,
 				CE98D04122FB666100374CD1 /* Utils */,
 				CE7FBF5122FA453600F9A226 /* Assets.xcassets */,
@@ -161,8 +179,8 @@
 			children = (
 				CE7FBF7E22FA800F00F9A226 /* LoginVC.swift */,
 				CE7FBF8022FA805B00F9A226 /* RegisterVC.swift */,
+				CE7FBF4C22FA453300F9A226 /* HomeVC.swift */,
 				CE7FBF4A22FA453300F9A226 /* AppDelegate.swift */,
-				CE7FBF4C22FA453300F9A226 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +195,7 @@
 		CE7FBF7C22FA7F9500F9A226 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE98D05122FC808300374CD1 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +215,7 @@
 			children = (
 				CE98D04222FB667B00374CD1 /* Extensions.swift */,
 				CE98D04422FB911000374CD1 /* Constants.swift */,
+				CE98D04E22FC7C0700374CD1 /* Firebase+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -204,8 +224,26 @@
 			isa = PBXGroup;
 			children = (
 				CE98D04722FB9B1A00374CD1 /* RoundedViews.swift */,
+				CE98D05422FC813300374CD1 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE98D04922FBD98100374CD1 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				CE98D04A22FBD99D00374CD1 /* ForgotPasswordVC.swift */,
+				CE98D04B22FBD99D00374CD1 /* ForgotPasswordVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		CE98D05A22FC814D00374CD1 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				CE98D05522FC813300374CD1 /* CategoryCell.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +330,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7FBF7522FA546500F9A226 /* LoginStoryboard.storyboard in Resources */,
+				CE98D05822FC813400374CD1 /* CategoryCell.xib in Resources */,
 				CE7FBF5522FA453600F9A226 /* LaunchScreen.storyboard in Resources */,
 				CE7FBF7722FA73DB00F9A226 /* GoogleService-Info.plist in Resources */,
 				CE7FBF5222FA453600F9A226 /* Assets.xcassets in Resources */,
+				CE98D04D22FBD99D00374CD1 /* ForgotPasswordVC.xib in Resources */,
 				CE7FBF5022FA453300F9A226 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE98D05922FC813400374CD1 /* CategoryCell.xib in Resources */,
 				CE7FBF6D22FA45A400F9A226 /* LaunchScreen.storyboard in Resources */,
 				CE7FBF7322FA461000F9A226 /* Assets.xcassets in Resources */,
 				CE7FBF7922FA76C900F9A226 /* GoogleService-Info.plist in Resources */,
@@ -431,12 +472,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE98D04322FB667B00374CD1 /* Extensions.swift in Sources */,
-				CE7FBF4D22FA453300F9A226 /* ViewController.swift in Sources */,
+				CE98D05222FC808300374CD1 /* Category.swift in Sources */,
+				CE7FBF4D22FA453300F9A226 /* HomeVC.swift in Sources */,
 				CE7FBF8122FA805B00F9A226 /* RegisterVC.swift in Sources */,
 				CE7FBF4B22FA453300F9A226 /* AppDelegate.swift in Sources */,
 				CE98D04822FB9B1A00374CD1 /* RoundedViews.swift in Sources */,
 				CE7FBF7F22FA800F00F9A226 /* LoginVC.swift in Sources */,
+				CE98D04C22FBD99D00374CD1 /* ForgotPasswordVC.swift in Sources */,
+				CE98D04F22FC7C0700374CD1 /* Firebase+Utils.swift in Sources */,
 				CE98D04522FB911000374CD1 /* Constants.swift in Sources */,
+				CE98D05622FC813400374CD1 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,8 +489,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE98D05022FC7CE300374CD1 /* Firebase+Utils.swift in Sources */,
 				CE7FBF6522FA45A400F9A226 /* ViewController.swift in Sources */,
 				CE7FBF6322FA45A400F9A226 /* AppDelegate.swift in Sources */,
+				CE98D05322FC808900374CD1 /* Category.swift in Sources */,
+				CE98D05722FC813400374CD1 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BZGPFH96K2;
 				INFOPLIST_FILE = Artable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,6 +679,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BZGPFH96K2;
 				INFOPLIST_FILE = Artable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,6 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BZGPFH96K2;
 				INFOPLIST_FILE = ArtableAdmin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -668,6 +719,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BZGPFH96K2;
 				INFOPLIST_FILE = ArtableAdmin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
