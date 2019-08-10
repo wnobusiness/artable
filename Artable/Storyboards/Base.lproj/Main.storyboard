@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomeVC-->
+        <!--artable-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="Artable" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,13 +22,13 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8P4-dg-LLk">
-                                <rect key="frame" x="20" y="88" width="335" height="724"/>
+                                <rect key="frame" x="10" y="88" width="355" height="724"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4i4-lC-osp">
                                     <size key="itemSize" width="152" height="217"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -42,9 +42,9 @@
                             <constraint firstItem="8P4-dg-LLk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4HK-wH-AFT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7V6-2b-18e" secondAttribute="trailing" id="4yo-AH-iRm"/>
                             <constraint firstItem="7V6-2b-18e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="57b-tr-Zd7"/>
-                            <constraint firstItem="8P4-dg-LLk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IJ4-Gv-tL4"/>
+                            <constraint firstItem="8P4-dg-LLk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="IJ4-Gv-tL4"/>
                             <constraint firstAttribute="bottom" secondItem="7V6-2b-18e" secondAttribute="bottom" id="Mng-bS-anz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8P4-dg-LLk" secondAttribute="trailing" constant="20" id="ROj-ce-B5Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8P4-dg-LLk" secondAttribute="trailing" constant="10" id="ROj-ce-B5Q"/>
                             <constraint firstItem="ZgR-ab-7q8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VTh-Np-nQg"/>
                             <constraint firstItem="ZgR-ab-7q8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4q-qS-73p"/>
                             <constraint firstItem="7V6-2b-18e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iVE-8l-LEf"/>
@@ -52,22 +52,65 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mCY-Kc-jfb">
+                    <navigationItem key="navigationItem" title="artable" id="mCY-Kc-jfb">
                         <barButtonItem key="leftBarButtonItem" title="Login" id="9xD-ho-ejP">
                             <connections>
                                 <action selector="loginOutClicked:" destination="BYZ-38-t0r" id="9P1-LD-em7"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="bar_button_cart" id="U9m-El-DwR"/>
+                            <barButtonItem image="bar_button_star" id="jGa-Jr-peh"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="ZgR-ab-7q8" id="9Er-Ut-2iK"/>
                         <outlet property="collectionView" destination="8P4-dg-LLk" id="DrO-JE-bdQ"/>
                         <outlet property="loginOutBtn" destination="9xD-ho-ejP" id="xh7-hG-4Ms"/>
+                        <segue destination="Sfb-CR-Phs" kind="show" identifier="toProductsVC" id="3wC-pZ-Ktv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1024.8" y="-607.38916256157643"/>
+        </scene>
+        <!--ProductsVC-->
+        <scene sceneID="2uI-6x-RSL">
+            <objects>
+                <viewController id="Sfb-CR-Phs" customClass="ProductsVC" customModule="Artable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bPO-8D-aAr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="Vys-dZ-E8X">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xCY-fr-eDg">
+                                <rect key="frame" x="10" y="96" width="355" height="716"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vys-dZ-E8X" firstAttribute="leading" secondItem="4wr-Yl-uj3" secondAttribute="leading" id="37L-fe-IUL"/>
+                            <constraint firstItem="xCY-fr-eDg" firstAttribute="leading" secondItem="4wr-Yl-uj3" secondAttribute="leading" constant="10" id="6X0-bs-PA0"/>
+                            <constraint firstAttribute="bottom" secondItem="xCY-fr-eDg" secondAttribute="bottom" id="FAj-2Z-gOu"/>
+                            <constraint firstItem="Vys-dZ-E8X" firstAttribute="top" secondItem="4wr-Yl-uj3" secondAttribute="top" id="Oig-ka-lSx"/>
+                            <constraint firstItem="4wr-Yl-uj3" firstAttribute="trailing" secondItem="xCY-fr-eDg" secondAttribute="trailing" constant="10" id="hMr-yZ-pHQ"/>
+                            <constraint firstItem="Vys-dZ-E8X" firstAttribute="trailing" secondItem="4wr-Yl-uj3" secondAttribute="trailing" id="ii2-ls-cIX"/>
+                            <constraint firstAttribute="bottom" secondItem="Vys-dZ-E8X" secondAttribute="bottom" id="qZn-d4-TXS"/>
+                            <constraint firstItem="xCY-fr-eDg" firstAttribute="top" secondItem="4wr-Yl-uj3" secondAttribute="top" constant="8" id="u8E-lJ-ace"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4wr-Yl-uj3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7o9-6g-0y9"/>
+                    <connections>
+                        <outlet property="tableView" destination="xCY-fr-eDg" id="rM2-uI-KRL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8tY-F1-zVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-607"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fbE-Mf-WmP">
@@ -77,10 +120,19 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0py-h3-CRI">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tOB-sh-cMu"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AtU-nE-ywk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJA-FS-JES" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,6 +141,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bar_button_cart" width="27" height="24"/>
+        <image name="bar_button_star" width="26" height="26"/>
         <image name="bg_cat3" width="1500" height="1875"/>
     </resources>
 </document>

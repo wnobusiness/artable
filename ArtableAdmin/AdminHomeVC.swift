@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AdminHomeVC: HomeVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
